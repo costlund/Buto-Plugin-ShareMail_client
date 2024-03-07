@@ -6,7 +6,7 @@ class PluginShareMail_client{
       if(wfRequest::get('u')){
         $data->set('data/u', wfRequest::get('u'));
       }else{
-        $data->set('data/u', wfServer::calcUrl());
+        $data->set('data/u', wfServer::calcUrl(true));
       }
     }
     $data->set('data/data-u', $data->get('data/u'));
