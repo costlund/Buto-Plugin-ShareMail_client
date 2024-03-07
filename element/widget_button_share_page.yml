@@ -1,0 +1,32 @@
+-
+  type: a
+  settings:
+    globals:
+      -
+        path_to_key: 'settings/plugin/i18n/translate_v1/settings/path'
+        value: '/plugin/share/mail_client/i18n'
+  attribute: 
+    onclick: plugin_share_mail_client(this)
+    data-u: rs:data-u
+    title: 'Sharing the page'
+    data-content-body: 'Link to the sharing page is'
+  innerHTML:
+    -
+      type: widget
+      data:
+        plugin: icons/bootstrap_v1_8_1
+        method: icon
+        data:
+          icon: mailbox
+    -
+      type: span
+      innerHTML: Mail
+-
+  type: script
+  innerHTML: |
+    function plugin_share_mail_client(btn){
+      var subject = btn.title+' '+document.title;
+      var body = btn.getAttribute('data-content-body')+' '+btn.getAttribute('data-u')+'.';
+      body = body.replace(/(?:\r\n|\r|\n)/g, '%0D%0A');
+      window.location.href='mailto:?subject='+subject+'&body='+body;
+    }

@@ -1,0 +1,31 @@
+readme:
+  name: Buto-Plugin-ShareMail_client
+  description: |
+    Share a page with a mailto link.
+  item:
+    -
+      name: Settings
+    -
+      name: Usage
+    -
+      name: Pages
+      item: {  }
+    -
+      name: Widgets
+      item:
+        -
+          name: widget_button_share_page
+          description: |
+            ````
+            type: widget
+            data:
+              plugin: share/mail_client
+              method: button_share_page
+            ````          
+    -
+      name: Event
+      item: {  }
+    -
+      name: Construct
+    -
+      name: Methods
