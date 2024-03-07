@@ -8,7 +8,7 @@
   attribute: 
     onclick: plugin_share_mail_client(this)
     data-u: rs:data-u
-    title: 'Sharing the page'
+    title: 'I am sharing the page'
     data-content-body: 'Link to the sharing page is'
   innerHTML:
     -
