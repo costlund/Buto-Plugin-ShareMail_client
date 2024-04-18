@@ -21,7 +21,16 @@ readme:
             data:
               plugin: share/mail_client
               method: button_share_page
-            ````          
+              data:
+            ````
+            Set u as the url to share (optional).
+
+            If not set.
+            - Check if param u is in request.
+            - Else using current page url. 
+            ````
+                u: _any_url_
+            ````
     -
       name: Event
       item: {  }

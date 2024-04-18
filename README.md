@@ -33,7 +33,15 @@
 <pre><code>type: widget
 data:
   plugin: share/mail_client
-  method: button_share_page</code></pre>
+  method: button_share_page
+  data:</code></pre>
+<p>Set u as the url to share (optional).</p>
+<p>If not set.</p>
+<ul>
+<li>Check if param u is in request.</li>
+<li>Else using current page url. <pre><code>  u: _any_url_</code></pre>
+</li>
+</ul>
 
 <a name="key_4"></a>
 
