@@ -6,7 +6,7 @@
         path_to_key: 'settings/plugin/i18n/translate_v1/settings/path'
         value: '/plugin/share/mail_client/i18n'
   attribute: 
-    onclick: plugin_share_mail_client(this)
+    onclick: "plugin_share_mail_client(this);PluginPageJs_trigger.trigger('share_mail_client')"
     data-u: rs:data-u
     title: 'I am sharing the page'
     data-content-body: 'Link to the sharing page is'
